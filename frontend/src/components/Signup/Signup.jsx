@@ -127,9 +127,9 @@ const Signup = () => {
               </button>
             </div>
              <div className={`${styles.noramlFlex} w-full text-slate-600`}>
-              <h4>Not have any account?</h4>
-              <Link to="/sign-up" className="text-blue-600 pl-2">
-                Sign Up
+              <h4>Already have any account?</h4>
+              <Link to="/login" className="text-blue-600 pl-2">
+                Sign In
               </Link>
             </div>
           </form>

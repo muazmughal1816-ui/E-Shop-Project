@@ -7,14 +7,26 @@
   "type": "commonjs",
   "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specif,ied\" && exit 1",
+    "start": "nodemon backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "express-fileupload": "^1.5.2",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.10.1",
     "nodemailer": "^10.0.10",
     "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "auto": "^11.3.6",
+    "postcss": "^8.5.28",
+    "prefixer": "^0.0.3",
+    "tailwindcss": "^4.3.3"
   }
 }
