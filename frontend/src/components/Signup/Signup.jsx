@@ -32,10 +32,9 @@ const Signup = () => {
     newForm.append("email", email);
     newForm.append("password", password);
 
-    axios.post(`${server}/user/create-user`, newForm, config).then((res) => {
-      if(res.data.success === true){
-        navigate("/")
-      }
+    axios.post(`${server}/user/create-user`, newForm, config)
+    .then((res) => {
+      alert(res.message);
     }).catch((err) => {
        console.error("❌ FULL CRASH OBJECT:", err);
       // This forces the hidden database or schema crash message to show as an alert!
