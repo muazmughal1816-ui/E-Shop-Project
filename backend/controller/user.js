@@ -23,8 +23,6 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
             if(err){
                 console.log(err);
                 res.status(500).json({message: "Error deleting file"})
-            } else{
-                res.json({message: "File deleted successfully"})
             }
         })
         return next(new ErrorHandler("User already exists", 400));
@@ -87,6 +85,11 @@ router.post("/activation", catchAsyncErrors(async(req, res, next) => {
         }
         const {name, email, password, avatar} = newUser;
 
+        let user = await User.findOne({email});
+        
+        if(user){
+            return next(new ErrorHandler("User already existed", 400));
+        }
             User.create({
                 name,
                 email,
@@ -96,8 +99,7 @@ router.post("/activation", catchAsyncErrors(async(req, res, next) => {
 
             sendToken(newUser, 201, res);
     } catch (error) {
-        console.log(error);
-        
+        return next(new ErrorHandler(error.message, 500));
     }
 }))
 
