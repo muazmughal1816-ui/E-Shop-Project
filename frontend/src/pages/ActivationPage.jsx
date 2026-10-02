@@ -10,7 +10,7 @@ const ActivationPage = () => {
 
   useEffect(() => {
     if(activation_token){
-      const activationEmail = async () => {
+      const sendRequest = async () => {
         try {
           const res = await axios.post(`${server}/user/activation`, {
             activation_token,
@@ -18,10 +18,10 @@ const ActivationPage = () => {
           console.log(res.data.message);
         } catch (error) {
           console.log(error.response.data.message); 
-          sendError(true);
+          setError(true);
         };
       };
-      activationEmail();
+      sendRequest();
     }
   }, [activation_token]);
   
@@ -30,9 +30,9 @@ const ActivationPage = () => {
     <div className='w-full h-screen flex justify-center items-center'>
       {
         error ? (
-          <p>Your token is expired!</p>
+          <p className='text-red-500'>Your token is expired!</p>
         ) : (
-          <p>Your account is has been created successfully! </p>
+          <p className='text-green-500'>Your account is has been created successfully! </p>
         )
       }
     </div>

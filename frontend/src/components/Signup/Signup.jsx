@@ -5,6 +5,7 @@ import styles from "../../styles/styles";
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { server } from '../../server';
+import { toast } from 'react-toastify';
 
 
 const Signup = () => {
@@ -34,13 +35,13 @@ const Signup = () => {
 
     axios.post(`${server}/user/create-user`, newForm, config)
     .then((res) => {
-      alert(res.message);
-    }).catch((err) => {
-       console.error("❌ FULL CRASH OBJECT:", err);
-      // This forces the hidden database or schema crash message to show as an alert!
-      console.error("📋 SERVER MESSAGE DETAILS:", err.response?.data);
-      alert(err.response?.data?.message || "Registration encountered an internal server error.");
-      
+      toast.success(res.data.message)
+    }).catch((error) => {
+      toast.error(error.response.data.message);
+      setName("");
+      setEmail("");
+      setPassword("");
+      setAvatar();
     })
   }
 

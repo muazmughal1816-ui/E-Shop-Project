@@ -43,7 +43,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 
       const activationToken = createActivationToken(user);
 
-      const activationUrl = `http://localhost:3000/activation/${activationToken}`;
+      const activationUrl = `http://localhost:5173/activation/${activationToken}`;
 
       try {
         await sendMail({
@@ -68,7 +68,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 // create activationToken
 const createActivationToken = (user) => {
     return jwt.sign(user, process.env.ACTIVATION_SECRET,{
-        expiresIn: "5m",
+        expiresIn: "1d",
     })
 }
 
@@ -90,14 +90,14 @@ router.post("/activation", catchAsyncErrors(async(req, res, next) => {
         if(user){
             return next(new ErrorHandler("User already existed", 400));
         }
-            User.create({
+            user = await User.create({
                 name,
                 email,
                 avatar,
                 password,
             })
 
-            sendToken(newUser, 201, res);
+            sendToken(user, 201, res);
     } catch (error) {
         return next(new ErrorHandler(error.message, 500));
     }

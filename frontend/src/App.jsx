@@ -2,6 +2,8 @@ import React from 'react'
 // import "./App.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {LoginPage, SignupPage, ActivationPage} from './Routes.js';
+import { ToastContainer, Bounce } from 'react-toastify'; // ✅ FIXED: Added Bounce here
+import 'react-toastify/dist/ReactToastify.css'; // Optional: Ensure toast styles are loaded
 const App = () => {
   return (
     <BrowserRouter>
@@ -10,6 +12,19 @@ const App = () => {
       <Route path='/sign-up' element={<SignupPage/>}/>
       <Route path='/activation/:activation_token' element={<ActivationPage/>}/>
     </Routes>
+    <ToastContainer
+  position="bottom-center"
+  autoClose={5000}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick={false}
+  rtl={false}
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover
+  theme="dark"
+  transition={Bounce}
+  />
     </BrowserRouter>
   )
 }
