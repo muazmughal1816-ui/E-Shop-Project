@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import "./App.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {LoginPage, SignupPage, ActivationPage} from './Routes.js';
-import { ToastContainer, Bounce } from 'react-toastify'; // ✅ FIXED: Added Bounce here
+import { ToastContainer, Bounce, toast } from 'react-toastify'; // ✅ FIXED: Added Bounce here
 import 'react-toastify/dist/ReactToastify.css'; // Optional: Ensure toast styles are loaded
+import Store from './redux/store';
+import { loadUser } from './redux/actions/user';
 const App = () => {
+  useEffect(() => {
+    Store.dispatch(loadUser());
+  }, []);
+  
   return (
     <BrowserRouter>
     <Routes>
