@@ -194,7 +194,7 @@ export const navItems = [
       title: "Computers and Laptops",
       subTitle: "",
       image_Url:
-        "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
+        "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
     },
     {
       id: 2,
@@ -222,20 +222,20 @@ export const navItems = [
       title: "Shoes",
       subTitle: "",
       image_Url:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
+        "data:image/jpeg;base64,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",
     },
     {
       id: 6,
       title: "Gifts",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv3cxxVetmw2iYN7fxtr4pAPHujRwho3UmsW7YiIgCiCBA47jvu0YzfDo&s=10",
     },
     {
       id: 7,
       title: "Pet Care",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://media.istockphoto.com/id/1795133707/photo/pet-owner-stroking-his-old-cat-and-dog-together.jpg?s=612x612&w=0&k=20&c=-7IGlGvZ3YUrmFa4CQlBgV8rzHbPDi2VxTAMlZrVNCk=",
     },
     {
       id: 8,
