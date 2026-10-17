@@ -271,11 +271,11 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://t4.ftcdn.net/jpg/14/82/56/47/360_F_1482564741_6KgFdG3ArzwF6Zujd1Ha5gEWcHiArHh8.jpg",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://t4.ftcdn.net/jpg/14/82/56/47/360_F_1482564741_6KgFdG3ArzwF6Zujd1Ha5gEWcHiArHh8.jpg",
         },
       ],
       shop: {
@@ -331,11 +331,11 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://www.apple.com/newsroom/images/product/mac/standard/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.large.jpg",
         },
       ],
       shop: {
@@ -370,7 +370,7 @@ export const navItems = [
         },
       ],
       shop: {
-        name: "Shahriar Watch House",
+        name: "Mughalz Watch House",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
@@ -393,7 +393,7 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RLV0015/2-800x800.jpg",
+          url: "https://www.urbansole.com.pk/cdn/shop/files/US-DK-6101WINDY_5.jpg?v=1787382933&width=1200",
         },
         {
           public_id: "test",
@@ -401,7 +401,7 @@ export const navItems = [
         },
       ],
       shop: {
-        name: "Alisha Shoes Mart",
+        name: "SD Shoes Mart",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
@@ -470,7 +470,7 @@ export const navItems = [
         },
       ],
       shop: {
-        name: "Shahriar Watch House",
+        name: "Mughalz Watch House",
         shop_avatar: {
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
