@@ -39,7 +39,7 @@ const Header = ({activeHeading}) => {
         <div className=" 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
             <div>
                 <Link className='flex h-15 w-30' to="/">
-                  <img src="https://images.unsplash.com/photo-1705988142466-e468bc654eeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="" />               
+                  <img src="https://template.canva.com/EAGQ1aYlOWs/1/0/1600w-bHiX_0QpJxE.jpg" alt="" />               
                 </Link>
             </div>
             {/* search box*/ }
