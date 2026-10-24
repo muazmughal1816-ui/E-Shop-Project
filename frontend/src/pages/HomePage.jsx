@@ -13,8 +13,8 @@ const HomePage = () => {
         <Hero/>
         <Categories/>
         <BestDeals />
-        <FeaturedProduct />
         <Events />
+        <FeaturedProduct />
     </div>
   )
 }
