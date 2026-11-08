@@ -1,7 +1,20 @@
 import React, { useEffect } from 'react'
 // import "./App.css";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {LoginPage, SignupPage, ActivationPage, HomePage, ProductsPage, BestSellingPage, EventsPage, FAQPage} from './Routes.js';
+import {
+  LoginPage,
+  SignupPage,
+  ActivationPage,
+  HomePage, 
+  ProductsPage, 
+  BestSellingPage, 
+  EventsPage, 
+  FAQPage, 
+  ProductDetailsPage,
+  CheckoutPage,
+  PaymentPage,
+  OrderSuccessPage,
+} from './Routes.js';
 import { ToastContainer, Bounce } from 'react-toastify'; // ✅ FIXED: Added Bounce here
 import 'react-toastify/dist/ReactToastify.css'; // Optional: Ensure toast styles are loaded
 import Store from './redux/store';
@@ -19,9 +32,13 @@ const App = () => {
       <Route path='/sign-up' element={<SignupPage/>}/>
       <Route path='/activation/:activation_token' element={<ActivationPage/>}/>
       <Route path='/products' element={<ProductsPage/>}/>
+      <Route path='/product/:name' element={<ProductDetailsPage/>}/>
       <Route path='/best-selling' element={<BestSellingPage/>}/>
       <Route path='/events' element={<EventsPage/>}/>
       <Route path='/faq' element={<FAQPage/>}/>
+      <Route path='/checkout' element={<CheckoutPage />}/>
+      <Route path='/payment' element={<PaymentPage/>}/>
+      <Route path='/order/success/:id' element={<OrderSuccessPage/>}/>
     </Routes>
     <ToastContainer
   position="bottom-center"

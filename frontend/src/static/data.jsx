@@ -427,7 +427,7 @@ export const navItems = [
         },
         {
           public_id: "test",
-          url: "https://eratablet.com/wp-content/uploads/2022/08/H51ba6537405f4948972e293927673546u.jpg",
+          url: "https://logitech.onlinesalestore.pk/cdn/shop/products/logitech-g431-7.1-surround-sound-gaming-headset-02-logitech-pakistan.jpg?v=1639224993",
         },
       ],
       shop: {
