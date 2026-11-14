@@ -10,7 +10,7 @@ import CheckoutPage from "../src/pages/CheckoutPage";
 import PaymentPage from "../src/pages/PaymentPage";
 import OrderSuccessPage from "../src/pages/OrderSuccessPage";
 import ProductDetailsPage from "../src/pages/ProductDetailsPage";
-
+import ProfilePage from '../src/pages/ProfilePage'
 
 export {
     LoginPage,
@@ -25,4 +25,5 @@ export {
     PaymentPage,
     OrderSuccessPage,
     ProductDetailsPage,
+    ProfilePage,
 };
