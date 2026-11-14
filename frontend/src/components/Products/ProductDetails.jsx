@@ -230,6 +230,24 @@ const ProductDetailsInfo = ({data}) => {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti numquam, optio quae fugit neque nemo culpa quibusdam dicta! Harum sapiente ex quas, laboriosam fugiat inventore blanditiis aspernatur maiores facilis. Quo veniam ipsum, libero praesentium id officia sit reiciendis alias?
                             </p>
                         </div>
+                        <div className="w-full 800px:w-[50%] mt-5 800px:mt-0 800px:flex flex-col items-end">
+                            <div className="text-left">
+                                <h5 className='font-[600]'>
+                                    Joined on: <span className='font-[500]'>14 Nov,2026</span>
+                                </h5>
+                                <h5 className='font-[600] pt-3'>
+                                    Total Products: <span className='font-[500]'>1,322</span>
+                                </h5>
+                                <h5 className='font-[600] pt-3'>
+                                    Total Reviews: <span className='font-[500]'>152</span>
+                                </h5>
+                                <Link to="/">
+                                <div className={`${styles.button} !rounded-[4px] !h-[39.5px] mt-3`}>
+                                    <h4 className="text-white">Visit Shop</h4>
+                                </div>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 )
             }
